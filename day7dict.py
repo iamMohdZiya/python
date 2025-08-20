@@ -207,3 +207,17 @@
 # print(setA)
 # print(setB)
 
+# Input: nums = [1, 2, 3, 1, 1, 1, 4, 2, 3], k = 6  
+# Output: 3  
+# Explanation: The longest subarray with sum 6 is [1, 1, 4] or [4, 2], both have length 3.
+
+nums = [1, 2, 3, 1, 1, 1, 4, 2, 3]
+k = 6
+
+for i in range(len(nums)):
+    for j in range(i+1):
+        if i < 3 :
+            print(nums[j])
+
+
+
